@@ -1,6 +1,5 @@
 from scipy.stats import randint
 
-
 def get_knn_param_grid():
     """
     Creates the hyperparameter grid for tuning the KNN classifier.
