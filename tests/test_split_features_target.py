@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from src.split_features_target import split_features_target
+from asteroidprep.split_features_target import split_features_target
 
 def test_split_features_target_basic():
     """The helper should split target values from numeric predictors."""

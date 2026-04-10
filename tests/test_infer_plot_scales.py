@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from src.infer_plot_scales import infer_plot_scales
+from asteroidprep.infer_plot_scales import infer_plot_scales
 
 
 def test_infer_plot_scales_basic_behavior():
