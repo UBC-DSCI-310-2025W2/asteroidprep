@@ -1,6 +1,7 @@
 # asteroidprep
 
 Authors: Jerry Jin, Malcolm Maxwell, Sadie Lee
+
 [![CI](https://github.com/UBC-DSCI-310-2025W2/asteroidprep/actions/workflows/ci-cd.yml/badge.svg?branch=main)](https://github.com/UBC-DSCI-310-2025W2/asteroidprep/actions/workflows/ci-cd.yml)
 
 ## About
@@ -17,9 +18,9 @@ pip install "git+https://github.com/UBC-DSCI-310-2025W2/asteroidprep.git@v0.1.2"
 
 ## Usage
 
-Import the package functions with:
+Import the main package functions with:
 
-```
+```python
 from asteroidprep import (
     clean_pha,
     clean_full_name,
@@ -28,6 +29,24 @@ from asteroidprep import (
     prepare_eval_data,
     split_features_target,
 )
+```
+
+Import automatic plot scale inference with:
+
+```python
+from asteroidprep.infer_plot_scales import infer_plot_scales
+```
+
+Import the data validation functions with:
+
+```python
+from asteroidprep.validation import run_validation
+```
+
+Import threshold utilities with:
+
+```python
+from asteroidprep.threshold_utils import select_threshold
 ```
 
 ## What this package contains
@@ -40,11 +59,36 @@ This package includes the following `py` files, containing respective functions:
 - `prepare_eval_data.py` prepares our data for evaluation, and
 - `split_features_target.py` splits our predictors and target variables.
 
+Additional helper functions include the following:
+
+- `infer_plot_scales.py` suggests if features should be plotted on linear or logarithmic scales for exploratory data analysis
+- `threshold_utils.py` selects a classification threshold from predicted probabilities
+
+Data validation can also be completed:
+
+- `run_validation.py` checks column names, data types, category levels, basic values, duplicate rows, empty rows, extreme outliers, and missing values
+
 Together these functions support the preprocessing steps used in our workflow.
+
+## Running tests
+
+Automated tests are located in `tests/` and can be run with:
+
+```bash
+pip install -e .
+pytest
+```
+
+If you prefer to run specific test files manually, examples include:
+
+```bash
+pytest tests/test_clean.py -q
+pytest tests/test_validation.py -q
+```
 
 ## Where this package sits in the Python ecosystem
 
-This small package, `asteroidprep`, is intended to support our asteroid analysis project's workflow, and is meant to be utilized along with larger packages like `pandas` and `scikit-learn`. In particular, its functionality makes our data preparation easier. In other words, it is NOT meant to replace the typical larger packages that Python offers.
+This small package, `asteroidprep`, is intended to support our asteroid analysis project's workflow, and is meant to be utilized along with larger packages like `pandas` and `scikit-learn`. In particular, its functionality makes our data preparation easier. In other words, it is not meant to replace the typical larger packages that Python offers.
 
 ## Our main repository
 
@@ -53,4 +97,4 @@ https://github.com/UBC-DSCI-310-2025W2/dsci-310-group-18
 
 ## License
 
-This project is offered under the Attribution 4.0 International (CC BY 4.0) License. The software in this project is offered under the MIT open source license. See the license file for more information.
+The software in this project is offered under the MIT open source license. See the [LICENSE](/LICENSE.md) file for more information.
