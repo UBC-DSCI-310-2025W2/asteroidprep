@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "asteroidprep"
-version = "0.1.0"
+version = "0.1.2"
 description = "Helper functions for the asteroid hazard prediction analysis project."
 authors = ["Jerry Jin", "Malcolm Maxwell", "Sadie Lee"]
 license = "MIT"
