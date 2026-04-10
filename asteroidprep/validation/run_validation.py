@@ -1,5 +1,4 @@
 import pandas as pd
-import pandera as pa
 from pandera.errors import SchemaError, SchemaErrors
 
 from .schema import get_schema
