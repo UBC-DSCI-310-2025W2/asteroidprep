@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from src.prepare_eval_data import prepare_eval_data
+from asteroidprep.prepare_eval_data import prepare_eval_data
 
 def test_prepare_eval_data_basic():
     """The helper should split evaluation predictors and target labels."""

@@ -1,6 +1,6 @@
 from scipy.stats import randint
 
-from src.get_knn_param_grid import get_knn_param_grid
+from asteroidprep.get_knn_param_grid import get_knn_param_grid
 
 
 def test_get_knn_param_grid_returns_expected_keys():

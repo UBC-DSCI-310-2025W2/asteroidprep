@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 
-from src.threshold_utils import select_threshold, ThresholdSelectionResult
+from asteroidprep.threshold_utils import select_threshold, ThresholdSelectionResult
 
 
 def test_select_threshold_max_recall_with_precision_constraint():

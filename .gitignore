@@ -1,0 +1,6 @@
+
+# generated files
+__pycache__/
+*.py[cod]
+results/logs/*.log
+.pytest_cache/

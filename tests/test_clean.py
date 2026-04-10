@@ -1,10 +1,7 @@
 import pytest
-import os
-import sys
 import pandas as pd
 
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-from src.clean import clean_pha, clean_full_name
+from asteroidprep.clean import clean_pha, clean_full_name
 
 def test_clean_pha_basic_mapping():
     """`clean_pha` should map valid hazard labels to 1/0."""

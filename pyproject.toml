@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "asteroidprep"
+version = "0.1.0"
+description = "Helper functions for the asteroid hazard prediction analysis project."
+authors = ["Jerry Jin", "Malcolm Maxwell", "Sadie Lee"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "asteroidprep" }]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+pandas = "*"
+scipy = "*"
+scikit-learn = "*"
+pandera = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pytest-cov = "*"
+mkdocs = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

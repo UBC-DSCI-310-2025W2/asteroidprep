@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from src.drop_columns import drop_columns
+from asteroidprep.drop_columns import drop_columns
 
 
 def test_drop_columns_removes_requested_columns():

@@ -1,6 +1,6 @@
 import pandas as pd
 import pytest
-from src.validation import run_validation
+from asteroidprep.validation import run_validation
 
 def test_valid_data(tmp_path):
     """Validation should pass for a schema-compliant one-row dataset."""
