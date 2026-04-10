@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pytest pytest-cov pandas scipy mkdocs
+          pip install pytest pytest-cov pandas scipy scikit-learn pandera mkdocs
 
       - name: Run tests with coverage
         run: |
