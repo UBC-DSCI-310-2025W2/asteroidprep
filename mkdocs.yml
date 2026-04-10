@@ -1,0 +1,5 @@
+site_name: asteroidprep
+theme:
+  name: mkdocs
+nav:
+  - Home: index.md
