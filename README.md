@@ -7,6 +7,29 @@ Authors: Jerry Jin, Malcolm Maxwell, Sadie Lee
 
 This Python package is directly intended for our asteroid project that aims to predict potentially hazardous near-earth asteroids, containing a few helper functions that aid in ensuring a reproducible workflow. In our main project we build a k-nearest neighbors algorithm using features from NASA JPL's Small-Body DataBase (SBDB). Specifically, this package separates our preprocessing functions from this main analysis repository so that the analysis can import these functions as a package rather than keeping them directly inside the report repository. Documentation of this database can be found at https://ssd-api.jpl.nasa.gov/doc/sbdb_query.html.
 
+## Installation
+
+Install the package from the `v0.1.0` release tag with:
+
+```bash
+pip install "git+https://github.com/UBC-DSCI-310-2025W2/asteroidprep.git@v0.1.0"
+```
+
+## Usage
+
+Import the package functions with:
+
+```
+from asteroidprep import (
+    clean_pha,
+    clean_full_name,
+    drop_columns,
+    get_knn_param_grid,
+    prepare_eval_data,
+    split_features_target,
+)
+```
+
 ## What this package contains
 
 This package includes the following `py` files, containing respective functions:
