@@ -14,10 +14,10 @@ This package contains functions for:
 
 ## Installation
 
-Install the package from the `v0.1.0` release tag with:
+Install the package from the `v0.1.2` release tag with:
 
 ```bash
-pip install "git+https://github.com/UBC-DSCI-310-2025W2/asteroidprep.git@v0.1.0"
+pip install "git+https://github.com/UBC-DSCI-310-2025W2/asteroidprep.git@v0.1.2"
 ```
 
 ## Usage
