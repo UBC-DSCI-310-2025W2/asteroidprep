@@ -1,6 +1,7 @@
 # asteroidprep
 
 Authors: Jerry Jin, Malcolm Maxwell, Sadie Lee
+[![CI](https://github.com/UBC-DSCI-310-2025W2/asteroidprep/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/UBC-DSCI-310-2025W2/asteroidprep/actions/workflows/ci-cd.yml)
 
 ## About
 
